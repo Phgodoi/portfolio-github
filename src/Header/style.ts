@@ -32,7 +32,7 @@ export const Container = styled.section`
   .balao {
     position: absolute;
     top: 10%;
-    left: 5%;
+    left: 0;
     width: 35%;
   }
 `;
