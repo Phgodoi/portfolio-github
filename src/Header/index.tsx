@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import paisagem_img from "../assets/paisagem9.jpg";
 import balao_img from "../assets/balao4.png";
 import { Container } from "./style";
+import Star from "./Star";
 
 const Header = () => {
   const balloonRef = useRef<HTMLImageElement>(null);
@@ -16,10 +17,9 @@ const Header = () => {
         balloon.style.transform = `scale(${1 - value / 700})`;
       });
     }
-
     return () => {
       window.removeEventListener("scroll", () => {
-        // Limpa o evento ao desmontar o componente para evitar vazamentos de memória.
+        // Limpa o evento
       });
     };
   }, []);
@@ -27,12 +27,12 @@ const Header = () => {
   return (
     <Container>
       <img className="paisagem" src={paisagem_img} alt="paisagem" />
-      <img
-        ref={balloonRef}
-        className="balao"
-        src={balao_img}
-        alt="balao"
-      />
+      <div className="star-container">
+        {Array.from({ length: 20 }, (_, index) => (
+          <Star key={index} />
+        ))}
+      </div>
+      <img ref={balloonRef} className="balao" src={balao_img} alt="balao" />
     </Container>
   );
 };

@@ -18,4 +18,6 @@ export const Container = styled.div`
     font-weight: 300;
     color: #20496a;
   }
+
+
 `;

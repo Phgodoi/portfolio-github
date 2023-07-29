@@ -4,6 +4,9 @@ const Content = () => {
   return (
     
       <Container>
+          
+
+
         <h2>Parallax</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quibusdam
@@ -46,6 +49,8 @@ const Content = () => {
         minima, ut earum modi unde exercitationem voluptate? Omnis sed minima
         consectetur.
       </p>
+
+      
       </Container>
     
   );
