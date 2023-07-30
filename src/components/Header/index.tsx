@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import paisagem_img from "../assets/paisagem9.jpg";
-import balao_img from "../assets/balao4.png";
+import { useEffect, useRef } from "react";
+import paisagem_img from "../../assets/paisagem1.jpg";
+import balao_img from "../../assets/balao4.png";
 import { Container } from "./style";
 import Star from "./Star";
 
