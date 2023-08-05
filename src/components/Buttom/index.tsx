@@ -1,10 +1,14 @@
 import { ButtonContainer } from "./style";
 import { IButton } from "./types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Button = ({title, variant = 'primary'}: IButton) => {
-  return <ButtonContainer variant={variant}>
-    {title}
-  </ButtonContainer>;
+const Button = ({ title, icon, variant = "primary", onClick }: IButton) => {
+  return (
+    <ButtonContainer variant={variant} onClick={onClick}>
+      <FontAwesomeIcon icon={icon} size="2x" />
+      {title}
+    </ButtonContainer>
+  );
 };
 
 export { Button };

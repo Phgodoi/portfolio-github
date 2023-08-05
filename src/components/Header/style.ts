@@ -9,6 +9,17 @@ export const Container = styled.section`
   justify-content: center;
   align-items: center;
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3vh;
+    width: 100%;
+    background: linear-gradient(to top, #fffffff7, transparent);
+    z-index: 1;
+}
+
   .paisagem {
     position: absolute;
     top: 0;

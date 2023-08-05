@@ -1,4 +1,4 @@
-import styled, { css }from "styled-components";
+import styled, { css } from "styled-components";
 import { IButtonStyled } from "./types";
 
 export const ButtonContainer = styled.button<IButtonStyled>`
@@ -8,8 +8,7 @@ export const ButtonContainer = styled.button<IButtonStyled>`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: backgound-color 0.5s all;
-
+  transition: background-color 0.5s all;
 
   background-color: #0077c2;
   color: #fff;
@@ -18,8 +17,30 @@ export const ButtonContainer = styled.button<IButtonStyled>`
     background-color: #005d8f;
   }
 
-  ${({ variant }) => variant === "primary" && css `
-  background-color: #000;
-  color: #fff;
+  ${({ variant }) =>
+    variant === "primary" &&
+    css`
+      background-color: #000;
+      color: #fff;
+    `}
+
+  ${({ variant }) =>
+    variant === "slide" &&
+    css`
+      color: #98a699a7;
+      background-color:#2c35328e;
+      margin: 0px 5px;
+      border-radius: 50%;
+      border: none;
+      transition: 0.5s;
+      border: none;
+  
+    
+    &:hover {
+      color: #0F6466;
+      background-color:#D2E8E3;
+      scale: 1.2;
+      cursor: pointer;
+    }
   `}
 `;

@@ -1,0 +1,28 @@
+/* Color Theme Swatches in Hex */
+.Teal-Dark-1-hex { color: #2C3532; }
+.Teal-Dark-2-hex { color: #0F6466; }
+.Teal-Dark-3-hex { color: #D8B08C; }
+.Teal-Dark-4-hex { color: #FFCB9A; }
+.Teal-Dark-5-hex { color: #D2E8E3; }
+
+
+
+ display: flex;
+    position: relative;
+    left: 50%;
+    
+    color: #98a699a7;
+    background-color: #2c35328e;
+    margin: 0px 5px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s;
+    border: none;
+
+    &:hover {
+      color: #0f6466;
+      background-color: #d2e8e3;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
