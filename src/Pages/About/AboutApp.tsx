@@ -1,4 +1,4 @@
-import { Container, Title, TitleContent, TitleHighLight } from "./style";
+import { Container, Title, TitleContent, TitleHighLight } from "./AboutStyle";
 
 const Content = () => {
   return (

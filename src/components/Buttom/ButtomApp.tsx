@@ -1,4 +1,4 @@
-import { ButtonContainer } from "./style";
+import { ButtonContainer } from "./ButtomStyle";
 import { IButton } from "./types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

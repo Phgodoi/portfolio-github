@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import paisagem_img from "../../assets/paisagem1.jpg";
 import balao_img from "../../assets/balao4.png";
-import { Container } from "./style";
-import Star from "./Star";
+import { Container } from "./HeaderStyle";
+import Star from "./StarsApp";
 
 const Header = () => {
   const balloonRef = useRef<HTMLImageElement>(null);

@@ -1,7 +1,7 @@
 import { useRef} from "react";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import { Button } from "../../components/Buttom";
-import { Container, Content, Item, Wrapper, Row } from "./style";
+import { Button } from "../../components/Buttom/ButtomApp";
+import { Container, Content, Item, Wrapper, Row } from "./ProjectsStyle";
 
 const SliderNew = () => {
   const slideRef = useRef<HTMLDivElement | null>(null);

@@ -1,13 +1,13 @@
-import { Content } from "./Pages/About";
-import { SliderNew } from "./Pages/Projects";
-import { Header } from "./components/Header";
-import { NavBar } from "./components/Navbar";
+import { Content } from "./Pages/About/AboutApp";
+import { SliderNew } from "./Pages/Projects/ProjectsApp";
+import { Header } from "./components/Header/HeaderApp";
+import Navbar from "./components/Navbar/NavbarApp";
 
 function App() {
   return (
     <>
       <Header />
-      <NavBar />
+      <Navbar />
       <Content />
       < SliderNew />
       <Content />

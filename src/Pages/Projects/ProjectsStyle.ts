@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   left: 50%;
-  border-radius: 50px;
 
   transform: translate(-50%);
   width: 100%;
