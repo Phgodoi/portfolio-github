@@ -28,19 +28,18 @@ export const ButtonContainer = styled.button<IButtonStyled>`
     variant === "slide" &&
     css`
       color: #98a699a7;
-      background-color:#2c35328e;
+      background-color: #2c35328e;
       margin: 0px 5px;
       border-radius: 50%;
       border: none;
       transition: 0.5s;
       border: none;
-  
-    
-    &:hover {
-      color: #0F6466;
-      background-color:#D2E8E3;
-      scale: 1.2;
-      cursor: pointer;
-    }
-  `}
+
+      &:hover {
+        color: #0f6466;
+        background-color: #d2e8e3;
+        scale: 1.2;
+        cursor: pointer;
+      }
+    `}
 `;

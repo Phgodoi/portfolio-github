@@ -1,6 +1,13 @@
 *{
     list-style: none;
     text-decoration: none;
-    
-
+    object-position: right bottom;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+font-weight: 500;
+    background-color: rgba(82, 82, 82, 0.302);
+    transition: st;
+    background-color: #056363;
+    background-image: url("./src/assets/paisagem1.jpg");
 }

@@ -4,7 +4,8 @@ export interface IButton {
     title?: string;
     variant?: string;
     onClick?: () => void;
-    icon: IconDefinition;
+    icon: IconDefinition ;
+    
 }
 
 export interface IButtonStyled {

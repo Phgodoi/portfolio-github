@@ -16,7 +16,7 @@ export const Container = styled.section`
     left: 0;
     height: 3vh;
     width: 100%;
-    background: linear-gradient(to top, #fffffff7, transparent);
+    background: linear-gradient(to top, #222, transparent);
     z-index: 1;
 }
 
@@ -27,6 +27,8 @@ export const Container = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    -o-object-fit: cover;
+    object-position: right center;
     pointer-events: none;
   }
 

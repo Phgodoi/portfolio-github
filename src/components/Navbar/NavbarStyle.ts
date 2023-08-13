@@ -14,7 +14,51 @@ export const Container = styled.nav`
   background-color: #222;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
 
-  z-index: 22222;
+  
+
+  @media screen and (max-width: 750px) {
+    .NavMenu {
+      position: absolute;
+      top: 0;
+      right: -200%;
+      margin: auto;
+      align-items: stretch;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      background-color: #00000030;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(7px);
+      border-radius: 13px;
+
+      width: 100%;
+      height: auto;
+      padding-top: 70px;
+
+      transition: all 0.3s ease-in-out;
+    }
+    .active {
+      right: 0;
+    }
+
+    ul a {
+      display: block;
+      widows: 100%;
+      padding: 2rem 0;
+
+      color: #000;
+    }
+    ul a:hover {
+      background-color: #0f646660;
+      backdrop-filter: blur(20px);
+    }
+    .mobile {
+      display: block;
+      margin: 0 80px;
+    }
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -22,14 +66,26 @@ export const NavMenu = styled.ul`
   grid-template-columns: repeat(6, auto);
   grid-gap: 15px;
 
+  margin: 0 40px;
   list-style: none;
   align-items: center;
   text-align: center;
   justify-content: end;
 
-  a{
+  a {
     text-decoration: none;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
     color: #fff;
+  }
+
+  i {
+    padding-right: 5px;
+  }
+  a:hover {
+    background-color: #0f6466;
+    border-radius: 10px;
+    transition: linear(0.645, 0.045, 0.355, 1) 0.3s ease-in-out;
   }
 `;
 
@@ -37,9 +93,17 @@ export const Logo = styled.h1`
   color: #fff;
   justify-self: start;
   cursor: pointer;
+  z-index: 1;
 
   .fa-react {
     font-size: 1.6rem;
     margin-left: 0.3rem;
   }
+`;
+
+export const MobileMode = styled.div`
+  color: #fff;
+  display: none;
+  z-index: 1;
+  cursor: pointer;
 `;
