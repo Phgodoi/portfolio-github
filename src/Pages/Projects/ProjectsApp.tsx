@@ -1,12 +1,11 @@
-import { useRef} from "react";
-import { faCaretLeft, faCaretRight} from "@fortawesome/free-solid-svg-icons";
+import { useRef } from "react";
+import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../../components/Buttom/ButtomApp";
 import { ProjectsData } from "./ProjectsData";
 import { Container, Content, Item, Wrapper, Row } from "./ProjectsStyle";
 
 const SliderNew = () => {
   const slideRef = useRef<HTMLDivElement | null>(null);
-  
 
   // Função para avançar para o próximo slide
   const handleClickNext = () => {
@@ -24,29 +23,37 @@ const SliderNew = () => {
   };
   return (
     <Wrapper id="Projects">
- 
       {/* Container dos slides */}
       <Container ref={slideRef}>
-      {ProjectsData.map((item, index) => {
-        console.log(item); 
-        return (
-          <Item
-            key={index}
-            className="item"
-            style={{ backgroundImage: `url(${item.imgUrl})` }}
-          >
-            <Content className="item">
-              <h1 className="name">{item.name}</h1>
-              <p className="des">{item.desc}</p>
-              <button>Ver no Github</button>
-             
-            </Content>
-          </Item>
-        );
-      })}
-      </Container> 
+        {ProjectsData.map((item, index) => {
+          console.log(item);
+          return (
+            <Item
+              key={index}
+              className="item"
+              style={{ backgroundImage: `url(${item.imgUrl})` }}
+            >
+              <Content className="item">
+                <h1 className="name">{item.name}</h1>
+                <p className="des">{item.desc}</p>
 
-            {/* Botões de navegação */}
+                <h2 className="languages">
+                  Tecnologias usadas:
+                  {item.languages.map((language, idx) => (
+                    <li key={idx} className="language">
+                      {language}
+                    </li>
+                  ))}
+                </h2>
+
+                <button><a href={item.github} target="_blank" rel="noreferrer">Ver no Github</a></button>
+              </Content>
+            </Item>
+          );
+        })}
+      </Container>
+
+      {/* Botões de navegação */}
       <Row>
         <Button icon={faCaretLeft} variant="slide" onClick={handleClickPrev} />
 

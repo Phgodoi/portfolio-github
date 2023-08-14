@@ -7,7 +7,7 @@ export const Container = styled.nav`
   font-size: 1.1rem;
   padding: 0 30px;
 
-  width: 100%;
+  width: 100vw;
   height: 60px;
   left: 0;
   overflow: hidden;
@@ -17,10 +17,12 @@ export const Container = styled.nav`
   
 
   @media screen and (max-width: 750px) {
+    width: 85vw;
+
     .NavMenu {
       position: absolute;
       top: 0;
-      right: -200%;
+      right: 0;
       margin: auto;
       align-items: stretch;
 
@@ -36,11 +38,11 @@ export const Container = styled.nav`
       width: 100%;
       height: auto;
       padding-top: 70px;
-
+      opacity: 0;
       transition: all 0.3s ease-in-out;
     }
     .active {
-      right: 0;
+      opacity: 1;
     }
 
     ul a {
@@ -56,7 +58,7 @@ export const Container = styled.nav`
     }
     .mobile {
       display: block;
-      margin: 0 80px;
+      margin: 0 10px;
     }
   }
 `;

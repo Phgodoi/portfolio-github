@@ -6,9 +6,9 @@ export const Wrapper = styled.div`
   left: 50%;
 
   transform: translate(-50%);
-  width: 100%;
+  width: 100vw;
   height: 60vh;
-  padding: 50px;
+  padding: 0;
   background-color: #fff;
   box-shadow: 0 30px 50px #fff;
 
@@ -39,8 +39,8 @@ export const Row = styled.div`
 `;
 
 export const Item = styled.div`
-  width: 10vw;
-  height: 10vh;
+  width: 8vw;
+  height: 8vh;
   background-position: 50% 50%;
   display: inline-block;
   background-size: cover;
@@ -57,27 +57,27 @@ export const Item = styled.div`
     top: 0;
     transform: translate(0, 0);
     border-radius: 10px;
-    width: 100%;
+    width: 99vw;
     height: 100%;
     box-shadow: none;
   }
 
   &:nth-child(3) {
-    left: 50%;
+    left: 55%;
     .item {
       display: none;
     }
   }
 
   &:nth-child(4) {
-    left: 60%;
+    left: 65%;
     .item {
       display: none;
     }
   }
 
   &:nth-child(5) {
-    left: 70%;
+    left: 75%;
     .item {
       display: none;
     }
@@ -86,31 +86,67 @@ export const Item = styled.div`
   &:nth-child(n + 6) {
     left: 80%;
     opacity: 0;
+    .item {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    &:nth-child(3) {
+      left: 70%;
+    }
+    &:nth-child(4) {
+      left: 80%;
+    }
+    &:nth-child(n + 5) {
+      display: none;
+    }
   }
 `;
 
 export const Content = styled.div`
   position: absolute;
   top: 50%;
-  left: 100px;
-  width: 300px;
-  text-align: left;
-  padding: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 50px;
   color: #eee;
   transform: translate(0, -50%);
 
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.7987570028011204) 10%,
+    rgba(0, 0, 0, 0.4598214285714286) 70%,
+    rgba(0, 212, 255, 0) 100%
+  );
+
   .name {
-    font-size: 50px;
+    font-size: 1.5rem;
     font-weight: bold;
+    padding: 20px 0;
+
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards;
   }
   .des {
-    font-size: 13px;
-    margin: 20px 0;
+    font-size: 1.1rem;
+
+    padding-bottom: 20px;
     opacity: 0;
     animation: showcontent 1s ease-in-out 0.3s 1 forwards;
   }
+  .languages ,.languages li{
+    list-style: none;
+    padding: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s 1 forwards;
+  }
+
   button {
     justify-content: center;
     border: none;
@@ -118,10 +154,14 @@ export const Content = styled.div`
     padding: 10px 20px;
     cursor: pointer;
     background-color: #05636390;
-    color: #fff;
-    font-size: 1.2rem;
+    width: 150px;
     align-items: center;
     opacity: 0;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+    }
 
     &:hover {
       background-color: #16b6b6;
