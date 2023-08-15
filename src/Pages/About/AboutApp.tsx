@@ -1,12 +1,18 @@
-import { Container, List, SubTitle, TitleContent, TitleHighLight } from "./AboutStyle";
+import {
+  Container,
+  List,
+  SubTitle,
+  TitleContent,
+  TitleHighLight,
+} from "./AboutStyle";
 
 const Content = () => {
   return (
     <Container>
-      <TitleHighLight id="about" >Paulo Godoi</TitleHighLight>
+      <TitleHighLight id="about">Olá, eu sou Paulo Godoi,</TitleHighLight>
       <SubTitle>Desenvolvedor Front-End</SubTitle>
 
-      <TitleContent >
+      <TitleContent>
         Em busca de novas oportunidades na área de tecnologia como
         desenvolvedor, já realizei alguns projetos que estou compartilhando em
         meu portfólio. Entre eles, há projetos acadêmicos e outros desenvolvidos
@@ -24,25 +30,52 @@ const Content = () => {
       </TitleContent>
 
       <SubTitle>Sobre Mim</SubTitle>
-      <TitleContent >
-      Formado em Gestão da Tecnologia da Informação pela Universidade Cruzeiro do Sul, foi durante o curso que tive meu primeiro contato com linguagens de programação. Desde então, me apaixonei pela área e venho estudando cada vez mais sobre o assunto. Além de possuir diversos cursos na área, como o <strong>Bootcamp Santander Full Stack Developer</strong> em parceria com a<strong> Dio - Digital Innovation One</strong>, também tenho aproveitado muito o conteúdo disponibilizado na plataforma do <strong>Curso em Vídeo</strong> com o <strong>professor Gustavo Guanabara</strong>.
-            Com todo esse conhecimento adquirido, comecei a desenvolver meu primeiro portfólio para demonstrar minhas habilidades e projetos desenvolvidos. Estou muito motivado em buscar novas oportunidades na área de tecnologia e aplicar meus conhecimentos em projetos desafiadores.
+      <TitleContent>
+        Me formei em Gestão da Tecnologia da Informação pela Universidade
+        Cruzeiro do Sul, onde minha paixão por programação teve início. Desde
+        então, minha dedicação só cresceu. Além de uma variedade de cursos na
+        área, como o Bootcamp Santander Full Stack Developer em parceria com a{" "}
+        <strong>Dio - Digital Innovation One</strong>, tenho aproveitado o
+        valioso conteúdo da plataforma <strong>Curso em Vídeo</strong>, com o
+        renomado professor Gustavo Guanabara. Toda essa aprendizagem me
+        impulsionou a criar meu próprio portfólio, onde exibo minhas habilidades
+        e projetos.
+      </TitleContent>
 
-            Tenho como objetivos imediatos encontrar uma oportunidade desafiadora na área de tecnologia, onde eu possa desenvolver minhas habilidades e aprimorar meu conhecimento. Busco por oportunidades como trainee ou desenvolvedor júnior, onde eu possa colocar em prática tudo o que aprendi até aqui e, ao mesmo tempo, continuar a aprender e crescer profissionalmente. Estou sempre em busca de aprimorar minhas habilidades e explorar novas tecnologias para oferecer as melhores soluções e resultados.
+      <TitleContent>
+        Estou profundamente motivado a buscar novas oportunidades na área
+        tecnológica e aplicar minha experiência em desafios empolgantes. Meus
+        objetivos imediatos são encontrar uma posição desafiadora, onde eu possa
+        expandir minhas habilidades e conhecimento. Estou à procura de posições
+        como trainee ou desenvolvedor júnior, onde eu possa implementar tudo que
+        aprendi até aqui e, ao mesmo tempo, continuar a aprender e crescer.
+        Minha busca constante por aprimoramento me leva a explorar novas
+        tecnologias, buscando sempre oferecer soluções e resultados de
+        excelência.
       </TitleContent>
 
       <SubTitle>Habilidades</SubTitle>
-            <List>
-                <li>HTML <i className="fa-brands fa-html5" /></li>
-                <li>CSS <i className="fa-brands fa-css3-alt" /></li>
-                <li>JavaScript  <i className="fa-brands fa-node-js" /> </li>
-                <li>TypeScript</li>
-                <li>React  <i className="fa-brands fa-react" /></li>
-                <li>Lógica de programação </li>
-                <li>Banco de dados <i className="fa-solid fa-database" /> </li>
-            </List>
+      <List>
+        <li>
+          HTML <i className="fa-brands fa-html5" />
+        </li>
+        <li>
+          CSS <i className="fa-brands fa-css3-alt" />
+        </li>
+        <li>
+          JavaScript <i className="fa-brands fa-node-js" />{" "}
+        </li>
+        <li>TypeScript</li>
+        <li>
+          React <i className="fa-brands fa-react" />
+        </li>
+        <li>Lógica de programação </li>
+        <li>
+          Banco de dados <i className="fa-solid fa-database" />{" "}
+        </li>
+      </List>
     </Container>
   );
-}; 
+};
 
 export { Content };
