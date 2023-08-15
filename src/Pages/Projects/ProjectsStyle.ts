@@ -4,24 +4,15 @@ export const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
   left: 50%;
-
   transform: translate(-50%);
-  width: 100vw;
-  height: 60vh;
-  padding: 0;
-  background-color: #fff;
-  box-shadow: 0 30px 50px #fff;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2vh;
-    width: 100%;
-    background: linear-gradient(to top, #fffffff7, transparent);
-    z-index: 1;
-  }
+  width: 100vw;
+  height: 100vh;
+  max-height: 650px;
+
+  padding: 0;
+  margin-bottom: 50px;
+  background-color: #fff;
 `;
 
 export const Container = styled.div`
@@ -40,7 +31,7 @@ export const Row = styled.div`
 
 export const Item = styled.div`
   width: 8vw;
-  height: 8vh;
+  height: 6vh;
   background-position: 50% 50%;
   display: inline-block;
   background-size: cover;
@@ -57,7 +48,7 @@ export const Item = styled.div`
     top: 0;
     transform: translate(0, 0);
     border-radius: 10px;
-    width: 99vw;
+    width: 100vw;
     height: 100%;
     box-shadow: none;
   }
@@ -90,7 +81,7 @@ export const Item = styled.div`
       display: none;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 800px)  {
     &:nth-child(3) {
       left: 70%;
     }
@@ -107,13 +98,12 @@ export const Content = styled.div`
   position: absolute;
   top: 50%;
   left: 0;
-  width: 60%;
+  width: 80vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
-  padding-bottom: 50px;
+  padding: 20px 10px 30px 20px;
   color: #eee;
   transform: translate(0, -50%);
 

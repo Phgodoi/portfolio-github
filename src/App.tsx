@@ -1,4 +1,5 @@
 import { Content } from "./Pages/About/AboutApp";
+import { Footer } from "./Pages/Footer/FooterApp";
 import { SliderNew } from "./Pages/Projects/ProjectsApp";
 import { Header } from "./components/Header/HeaderApp";
 import Navbar from "./components/Navbar/NavbarApp";
@@ -9,7 +10,8 @@ function App() {
       <Header />
       <Navbar />
       <Content />
-      < SliderNew />
+      <SliderNew />
+      <Footer />
     </>
   );
 }

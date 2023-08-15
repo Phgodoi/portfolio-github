@@ -16,14 +16,15 @@ export const Container = styled.nav`
 
   
 
-  @media screen and (max-width: 750px) {
-    width: 85vw;
+  @media screen and (max-width: 800px) {
+   width: 92vw;
 
     .NavMenu {
       position: absolute;
       top: 0;
       right: 0;
       margin: auto;
+      padding: 0;
       align-items: stretch;
 
       display: flex;
@@ -58,7 +59,7 @@ export const Container = styled.nav`
     }
     .mobile {
       display: block;
-      margin: 0 10px;
+      padding:  0 30px;
     }
   }
 `;
@@ -68,7 +69,7 @@ export const NavMenu = styled.ul`
   grid-template-columns: repeat(6, auto);
   grid-gap: 15px;
 
-  margin: 0 40px;
+  padding: 0 100px; 
   list-style: none;
   align-items: center;
   text-align: center;

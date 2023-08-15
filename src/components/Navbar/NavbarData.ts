@@ -7,7 +7,7 @@ export const NavData = [
     },
     {
         title: "About",
-        url: "#",
+        url: "#about",
         cName: "nav-links",
         icon: "fa-solid fa-circle-info"
     },
@@ -19,7 +19,7 @@ export const NavData = [
     },
     {
         title: "Contact",
-        url: "#",
+        url: "#Contact",
         cName: "nav-links",
         icon: "fa-solid fa-address-book"
     },

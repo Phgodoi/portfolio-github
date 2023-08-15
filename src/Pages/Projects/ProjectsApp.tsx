@@ -46,7 +46,11 @@ const SliderNew = () => {
                   ))}
                 </h2>
 
-                <button><a href={item.github} target="_blank" rel="noreferrer">Ver no Github</a></button>
+                <button>
+                  <a href={item.github} target="_blank" rel="noreferrer">
+                    Ver no Github
+                  </a>
+                </button>
               </Content>
             </Item>
           );

@@ -3,10 +3,10 @@ import { Container, List, SubTitle, TitleContent, TitleHighLight } from "./About
 const Content = () => {
   return (
     <Container>
-      <TitleHighLight id="about">Paulo Godoi</TitleHighLight>
+      <TitleHighLight id="about" >Paulo Godoi</TitleHighLight>
       <SubTitle>Desenvolvedor Front-End</SubTitle>
 
-      <TitleContent>
+      <TitleContent >
         Em busca de novas oportunidades na área de tecnologia como
         desenvolvedor, já realizei alguns projetos que estou compartilhando em
         meu portfólio. Entre eles, há projetos acadêmicos e outros desenvolvidos

@@ -1,21 +1,7 @@
 *{
-    list-style: none;
-    text-decoration: none;
-    object-position: right bottom;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-font-weight: 500;
-    background-color: rgba(82, 82, 82, 0.302);
-    transition: st;
-    background-color: #056363;
-    background-image: url("linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 38%, rgba(0,212,255,0) 100%);");
-
-    opacity: 0;  padding: 2000px;
-
-
-
-
-    justify-content: safe;
-
+    box-sizing: content-box;
+    html {
+        scroll-behavior: auto;
+      }
+      
 }
