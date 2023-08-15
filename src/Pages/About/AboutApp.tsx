@@ -9,7 +9,7 @@ import {
 const Content = () => {
   return (
     <Container>
-      <TitleHighLight id="about">Olá, eu sou Paulo Godoi,</TitleHighLight>
+      <TitleHighLight id="about">Paulo Godoi,</TitleHighLight>
       <SubTitle>Desenvolvedor Front-End</SubTitle>
 
       <TitleContent>
