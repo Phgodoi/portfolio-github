@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
   background-color: #222;
   color: #fff;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -27,8 +27,10 @@ export const Content = styled.ul`
     text-decoration: none;
     font-weight: bold;
   }
-  a:hover {
-    color: #fff;
-    text-decoration: underline;
+  i:hover {
+    border-radius: 50%;
+    color: #0f6466;
+    transform: scale(1.3);
+    cursor: pointer;
   }
 `;

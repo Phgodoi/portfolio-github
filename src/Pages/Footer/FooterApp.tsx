@@ -5,7 +5,9 @@ const Footer = () => {
     <Container>
       <Content id="Contact">
         <span>
-          <a href="mailto:pauloh.godoi94@gmail.com"><i className="fa-solid fa-envelope"  /></a>
+          <a href="mailto:pauloh.godoi94@gmail.com">
+            <i className="fa-solid fa-envelope" />
+          </a>
         </span>
         <span>
           <a
@@ -18,7 +20,16 @@ const Footer = () => {
         </span>
         <span>
           <a href="https://github.com/Phgodoi" target="_blank" rel="noreferrer">
-            <i className="fa-brands fa-github" />{" "}
+            <i className="fa-brands fa-github" />
+          </a>
+        </span>
+        <span>
+          <a
+            href="https://wa.me/5511998783815"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className="fa-brands fa-whatsapp" />
           </a>
         </span>
         <p>Desenvolvido por Paulo Godoi</p>

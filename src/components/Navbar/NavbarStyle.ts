@@ -5,20 +5,16 @@ export const Container = styled.nav`
   justify-content: space-between;
   align-items: center;
   font-size: 1.1rem;
-  padding: 0 30px;
+  padding: 0;
 
-  width: 100vw;
+  width: 100%;
   height: 60px;
   left: 0;
   overflow: hidden;
   background-color: #222;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-
-  
+  box-shadow: 0 10px 10px  rgba(0, 0, 0, .3);
 
   @media screen and (max-width: 800px) {
-   width: 92vw;
-
     .NavMenu {
       position: absolute;
       top: 0;
@@ -39,11 +35,11 @@ export const Container = styled.nav`
       width: 100%;
       height: auto;
       padding-top: 70px;
-      opacity: 0;
+      display: none;
       transition: all 0.3s ease-in-out;
     }
     .active {
-      opacity: 1;
+      display: block;
     }
 
     ul a {
@@ -69,7 +65,7 @@ export const NavMenu = styled.ul`
   grid-template-columns: repeat(6, auto);
   grid-gap: 15px;
 
-  padding: 0 100px; 
+  margin: 10px; 
   list-style: none;
   align-items: center;
   text-align: center;
@@ -97,7 +93,7 @@ export const Logo = styled.h1`
   justify-self: start;
   cursor: pointer;
   z-index: 1;
-
+  margin-left: 1rem;
   .fa-react {
     font-size: 1.6rem;
     margin-left: 0.3rem;

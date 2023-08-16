@@ -4,13 +4,12 @@ export const GlobalStyle = createGlobalStyle`
     * {
         padding: 0;
         margin: 0;
-        font-family: Georgia, 'san-serif' ;
+        font-family: Georgia, sans-serif;
     }
 
     body {
-        width: 100vw;
-        height: 100vh;
         overflow-x: hidden;
+        background-color: #f2f2f2;
     }
 
     html {

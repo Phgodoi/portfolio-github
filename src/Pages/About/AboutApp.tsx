@@ -9,7 +9,7 @@ import {
 const Content = () => {
   return (
     <Container>
-      <TitleHighLight id="about">Paulo Godoi,</TitleHighLight>
+      <TitleHighLight id="about">Paulo Godoi</TitleHighLight>
       <SubTitle>Desenvolvedor Front-End</SubTitle>
 
       <TitleContent>
@@ -21,23 +21,25 @@ const Content = () => {
         <abbr title="conduta firme; perseverança, insistência, aferro">
           <em>afinco</em>
         </abbr>{" "}
-        para conquistar meus objetivos. Tenho amplo conhecimento em HTML e CSS,
-        e venho me aprimorando cada vez mais em outras tecnologias para estar
-        sempre atualizado e preparado para novos desafios. Estou confiante em
-        minha capacidade de contribuir para projetos de tecnologia inovadores e
-        estou animado para encontrar uma equipe de trabalho que me permita
-        crescer e evoluir como profissional.
+        para conquistar meus objetivos. Tenho amplo conhecimento em HTML, CSS e
+        JavaScript, e venho me aprimorando em React e cada vez mais em outras
+        tecnologias para estar sempre atualizado e preparado para novos
+        desafios. Estou confiante em minha capacidade de contribuir para
+        projetos de tecnologia inovadores e estou animado para encontrar uma
+        equipe de trabalho que me permita crescer e evoluir profissionalmente.
       </TitleContent>
 
       <SubTitle>Sobre Mim</SubTitle>
       <TitleContent>
-        Me formei em Gestão da Tecnologia da Informação pela Universidade
-        Cruzeiro do Sul, onde minha paixão por programação teve início. Desde
+        Me formei em <strong>
+          Gestão da Tecnologia da Informação pela Universidade
+          Cruzeiro do Sul
+        </strong>, onde minha paixão por programação teve início. Desde
         então, minha dedicação só cresceu. Além de uma variedade de cursos na
         área, como o Bootcamp Santander Full Stack Developer em parceria com a{" "}
         <strong>Dio - Digital Innovation One</strong>, tenho aproveitado o
         valioso conteúdo da plataforma <strong>Curso em Vídeo</strong>, com o
-        renomado professor Gustavo Guanabara. Toda essa aprendizagem me
+        renomado professor <strong>Gustavo Guanabara</strong>. Toda essa aprendizagem me
         impulsionou a criar meu próprio portfólio, onde exibo minhas habilidades
         e projetos.
       </TitleContent>

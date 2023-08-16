@@ -6,13 +6,15 @@ export const Wrapper = styled.div`
   left: 50%;
   transform: translate(-50%);
 
-  width: 100vw;
   height: 100vh;
   max-height: 650px;
 
   padding: 0;
   margin-bottom: 50px;
   background-color: #fff;
+
+  box-shadow: 0 10px 10px  rgba(0, 0, 0, .3);
+
 `;
 
 export const Container = styled.div`
@@ -81,7 +83,8 @@ export const Item = styled.div`
       display: none;
     }
   }
-  @media screen and (max-width: 800px)  {
+
+  @media screen and (max-width: 800px) {
     &:nth-child(3) {
       left: 70%;
     }
@@ -98,7 +101,7 @@ export const Content = styled.div`
   position: absolute;
   top: 50%;
   left: 0;
-  width: 80vw;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -107,36 +110,48 @@ export const Content = styled.div`
   color: #eee;
   transform: translate(0, -50%);
 
+  backdrop-filter: blur(3px);
+
+
+  background: rgb(0, 0, 0);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.7987570028011204) 10%,
-    rgba(0, 0, 0, 0.4598214285714286) 70%,
-    rgba(0, 212, 255, 0) 100%
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, .9) 40%,
+    rgba(0, 0, 0, 0.85) 50%,
+    rgba(0, 0, 0, 0) 100%
   );
 
   .name {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 20px 0;
+    width: 80%;
+
 
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards;
   }
   .des {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    width: 70%;
 
     padding-bottom: 20px;
     opacity: 0;
     animation: showcontent 1s ease-in-out 0.3s 1 forwards;
   }
-  .languages ,.languages li{
-    list-style: none;
-    padding: 5px;
-    font-size: 1rem;
+  .languages {
+    font-size: 1.4rem;
     opacity: 0;
     animation: showcontent 1s ease-in-out 0.3s 1 forwards;
   }
 
+  .languages li {
+    line-height: 2rem;
+    list-style: none;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
   button {
     justify-content: center;
     border: none;

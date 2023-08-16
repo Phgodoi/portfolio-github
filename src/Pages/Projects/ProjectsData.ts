@@ -43,10 +43,9 @@ export const ProjectsData = [
     id: 6,
     name: "Calculadora React",
     imgUrl: process.env.PUBLIC_URL + "/assets/calculadora.png",
-    desc: "Este projeto foi desenvolvido como parte do Bootcamp Orange Tech+ da DIO. O objetivo era aprimorar meus conhecimentos em React por meio de um desafio.",
+    desc: "Projeto desenvolvido como parte do Bootcamp Orange Tech+ da DIO. Com o objetivo de aprimorar meus conhecimentos em React.",
     languages: ["Javascript","React", "HTML"],
     github: "https://github.com/Phgodoi/calculadora-react"
   },
   
-   
 ];

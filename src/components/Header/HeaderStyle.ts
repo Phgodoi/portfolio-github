@@ -10,7 +10,7 @@ export const Container = styled.section`
   align-items: center;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -18,7 +18,7 @@ export const Container = styled.section`
     width: 100%;
     background: linear-gradient(to top, #222, transparent);
     z-index: 1;
-}
+  }
 
   .paisagem {
     position: absolute;
@@ -86,11 +86,14 @@ export const Container = styled.section`
   }
 
   @keyframes starBlink {
-    0%, 50%, 100% {
+    0%,
+    50%,
+    100% {
       filter: brightness(2);
     }
 
-    25%, 75% {
+    25%,
+    75% {
       filter: brightness(0.8);
     }
   }
