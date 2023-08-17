@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/portfolio-github/static/js/main.52a19660.js",
+    "main.js": "/portfolio-github/static/js/main.501e5a03.js",
     "static/media/paisagem1.jpg": "/portfolio-github/static/media/paisagem1.8cc833bf38597fcab054.jpg",
     "static/media/balao4.png": "/portfolio-github/static/media/balao4.1105902aa4f36d038a9f.png",
     "index.html": "/portfolio-github/index.html",
-    "main.52a19660.js.map": "/portfolio-github/static/js/main.52a19660.js.map"
+    "main.501e5a03.js.map": "/portfolio-github/static/js/main.501e5a03.js.map"
   },
   "entrypoints": [
-    "static/js/main.52a19660.js"
+    "static/js/main.501e5a03.js"
   ]
 }
