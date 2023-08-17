@@ -14,7 +14,7 @@ export const Container = styled.nav`
   background-color: #222;
   box-shadow: 0 10px 10px  rgba(0, 0, 0, .3);
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 750px) {
     .NavMenu {
       position: absolute;
       top: 0;
