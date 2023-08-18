@@ -164,8 +164,8 @@ export const Content = styled.div`
     opacity: 0;
     a {
       text-decoration: none;
-      color: #fff;
       font-size: 1rem;
+      color: #fff;
     }
 
     &:hover {
