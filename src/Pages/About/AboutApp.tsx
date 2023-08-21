@@ -20,7 +20,7 @@ const Content = () => {
         migrar de área nunca é fácil, mas estou me dedicando com{" "}
         <abbr title="conduta firme; perseverança, insistência, aferro">
           <em>afinco</em>
-        </abbr>{" "}
+        </abbr>
         para conquistar meus objetivos. Tenho amplo conhecimento em HTML, CSS e
         JavaScript, e venho me aprimorando em React e cada vez mais em outras
         tecnologias para estar sempre atualizado e preparado para novos
@@ -36,7 +36,7 @@ const Content = () => {
           Cruzeiro do Sul
         </strong>, onde minha paixão por programação teve início. Desde
         então, minha dedicação só cresceu. Além de uma variedade de cursos na
-        área, como o Bootcamp Santander Full Stack Developer em parceria com a{" "}
+        área, como o Bootcamp Santander Full Stack Developer em parceria com a
         <strong>Dio - Digital Innovation One</strong>, tenho aproveitado o
         valioso conteúdo da plataforma <strong>Curso em Vídeo</strong>, com o
         renomado professor <strong>Gustavo Guanabara</strong>. Toda essa aprendizagem me
@@ -65,7 +65,7 @@ const Content = () => {
           CSS <i className="fa-brands fa-css3-alt" />
         </li>
         <li>
-          JavaScript <i className="fa-brands fa-node-js" />{" "}
+          JavaScript <i className="fa-brands fa-js" />
         </li>
         <li>TypeScript</li>
         <li>
@@ -73,7 +73,7 @@ const Content = () => {
         </li>
         <li>Lógica de programação </li>
         <li>
-          Banco de dados <i className="fa-solid fa-database" />{" "}
+          Banco de dados <i className="fa-solid fa-database" />
         </li>
       </List>
     </Container>
